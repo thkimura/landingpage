@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.hover\:grayscale-0:hover {
+  filter: grayscale(0%);
+}
