@@ -52,41 +52,51 @@ export function AboutPage() {
   );
 
   return (
-    <section id="about" className="min-h-screen flex items-center bg-[#252525]">
-      <div className="container mx-auto px-4">
-        <h1 className="text-5xl font-bold text-white mb-16">About me</h1>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <h3 className="text-2xl text-white">Experience</h3>
-            <div className="flex items-center gap-8">
-              <div className="flex-1">
-                <p className="text-gray-400">{renderText()}</p>
-              </div>
-              <div className="hidden md:block">
-                <div className="w-12 h-0.5 bg-[#E94E35]"></div>
+    <div className="relative w-full">
+      <section id="about" className="min-h-screen flex items-center bg-[#252525]">
+        <div className="container mx-auto px-4">
+          <h1 className="text-5xl font-bold text-white mb-16">About me</h1>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <h3 className="text-2xl text-white">Experience</h3>
+              <div className="flex items-center gap-8">
+                <div className="flex-1">
+                  <p className="text-gray-400">{renderText()}</p>
+                </div>
+                <div className="hidden md:block">
+                  <div className="w-12 h-0.5 bg-[#E94E35]"></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-3 gap-8">
-            {skills.map(({ name, Icon, color }) => (
-              <div key={name} className="text-center group">
-                <div
-                  className={`w-20 h-20 mx-auto mb-4 p-4 rounded-xl bg-[#1E1E1E] flex items-center justify-center transition-all duration-300
-                    ${hoveredSkill === name ? 'scale-110 ring-4 ring-[#E94E35] bg-[#E94E35]/10' : 'group-hover:bg-[#E94E35]/10'}
-                  `}
-                >
-                  <Icon
-                    size={40}
-                    color={color}
-                    className={`transition-transform duration-300 ${hoveredSkill === name ? 'scale-125' : ''}`}
-                  />
+            <div className="grid grid-cols-3 gap-8">
+              {skills.map(({ name, Icon, color }) => (
+                <div key={name} className="text-center group">
+                  <div
+                    className={`w-20 h-20 mx-auto mb-4 p-4 rounded-xl bg-[#1E1E1E] flex items-center justify-center transition-all duration-300
+                      ${hoveredSkill === name ? 'scale-110 ring-4 ring-[#E94E35] bg-[#E94E35]/10' : 'group-hover:bg-[#E94E35]/10'}
+                    `}
+                  >
+                    <Icon
+                      size={40}
+                      color={color}
+                      className={`transition-transform duration-300 ${hoveredSkill === name ? 'scale-125' : ''}`}
+                    />
+                  </div>
+                  <p className="text-white mt-2 font-medium">{name}</p>
                 </div>
-                <p className="text-white mt-2 font-medium">{name}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
+      </section>
+      {/* Seta para descer */}
+      <div className="w-full hidden md:flex justify-center absolute left-0 bottom-8 z-10">
+        <a href="#portfolio" className="animate-bounce text-[#E94E35]">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </a>
       </div>
-    </section>
+    </div>
   );
 } 

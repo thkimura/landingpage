@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { Navbar } from '../components/Navbar';
+import { FaInstagram, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 export function HeroPage() {
   const el = useRef(null);
@@ -33,11 +34,25 @@ export function HeroPage() {
             <div className="text-white space-y-8 text-center md:text-left max-w-lg w-full">
               <h1 className="text-4xl md:text-[4rem] font-light leading-tight min-h-[12rem]">
                 I'm Kimura, a<br />
-                <span className="text-[#E94E35] h-[6rem] block min-w-[31rem] max-w-full overflow-x-auto">
+                <span className="flex md:block justify-center md:justify-start text-[#E94E35] h-[6rem] min-w-0 max-w-full overflow-x-auto">
                   <span ref={el}></span>
                 </span>
               </h1>
               <p className="text-gray-400 text-lg">Fullstack Developer / Creative Coder</p>
+              <div className="flex justify-center md:justify-start gap-6 mt-4">
+                <a href="https://instagram.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-400 text-3xl transition-colors" aria-label="Instagram">
+                  <FaInstagram />
+                </a>
+                <a href="https://github.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-3xl transition-colors" aria-label="GitHub">
+                  <FaGithub />
+                </a>
+                <a href="https://linkedin.com/in/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 text-3xl transition-colors" aria-label="LinkedIn">
+                  <FaLinkedin />
+                </a>
+                <a href="https://facebook.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-500 text-3xl transition-colors" aria-label="Facebook">
+                  <FaFacebook />
+                </a>
+              </div>
             </div>
             <div className="relative">
               <div className="w-60 h-96 rounded-[69px] overflow-hidden bg-[#4A656A] backdrop-blur-sm shadow-[0_0_160px_rgba(74,101,106,0.5)]">
@@ -52,7 +67,7 @@ export function HeroPage() {
           </div>
         </div>
       </section>
-      <div className="w-full flex justify-center absolute left-0 bottom-8 z-10">
+      <div className="w-full hidden md:flex justify-center absolute left-0 bottom-8 z-10">
         <a href="#about" className="animate-bounce text-[#E94E35]">
           <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
