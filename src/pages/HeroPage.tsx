@@ -8,7 +8,7 @@ export function HeroPage() {
 
   useEffect(() => {
     const options = {
-      strings: ['Web Developer', 'Father', 'Gamer', 'Music'],
+      strings: ['Web Developer', 'Father', 'Gamer', 'Musician'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
@@ -37,7 +37,7 @@ export function HeroPage() {
                   <span ref={el}></span>
                 </span>
               </h1>
-              <p className="text-gray-400 text-lg">Frontend Developer / Creative Coder</p>
+              <p className="text-gray-400 text-lg">Fullstack Developer / Creative Coder</p>
             </div>
             <div className="relative">
               <div className="w-60 h-96 rounded-[69px] overflow-hidden bg-[#4A656A] backdrop-blur-sm shadow-[0_0_160px_rgba(74,101,106,0.5)]">
@@ -52,6 +52,13 @@ export function HeroPage() {
           </div>
         </div>
       </section>
+      <div className="w-full flex justify-center absolute left-0 bottom-8 z-10">
+        <a href="#about" className="animate-bounce text-[#E94E35]">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </a>
+      </div>
     </>
   );
 } 
