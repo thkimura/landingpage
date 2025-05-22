@@ -57,7 +57,7 @@ export function HeroPage() {
             <div className="relative">
               <div className="w-60 h-96 rounded-[69px] overflow-hidden bg-[#4A656A] backdrop-blur-sm shadow-[0_0_160px_rgba(74,101,106,0.5)]">
                 <img 
-                  src="/hero-bg.jpg"
+                  src="/landingpage/hero-bg.jpg"
                   alt="Thalles Kimura"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 hover:scale-180 scale-150"
                 />
@@ -76,4 +76,4 @@ export function HeroPage() {
       </div>
     </>
   );
-} 
+}
