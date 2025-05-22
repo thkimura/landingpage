@@ -8,18 +8,22 @@ export function PortfolioPage() {
       id: 1,
       title: 'Sabor Caseiro',
       images: [
-        '/models/project1.jpg',
-        '/models/project1_2.jpg',
-        '/models/project1_3.jpg',
+        '/public/models/page1sc.jpg',
+        '/public/models/page2sc.jpg',
+        '/public/models/page3sc.jpg',
+        '/public/models/page4sc.jpg',
       ],
     },
     {
       id: 2,
       title: 'Barber Shop',
       images: [
-        '/models/project2.jpg',
-        '/models/project2_2.jpg',
-        '/models/project2_3.jpg',
+        '/public/models/page1bs.jpg',
+        '/public/models/page2bs.jpg',
+        '/public/models/page3bs.jpg',
+        '/public/models/page4bs.jpg',
+        '/public/models/page5bs.jpg',
+        '/public/models/page6bs.jpg',
       ],
     },
   ];

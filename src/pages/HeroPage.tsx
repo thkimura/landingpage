@@ -40,16 +40,16 @@ export function HeroPage() {
               </h1>
               <p className="text-gray-400 text-lg">Fullstack Developer / Creative Coder</p>
               <div className="flex justify-center md:justify-start gap-6 mt-4">
-                <a href="https://instagram.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-400 text-3xl transition-colors" aria-label="Instagram">
+                <a href="https://instagram.com/thalleskimura" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-400 text-3xl transition-colors" aria-label="Instagram">
                   <FaInstagram />
                 </a>
-                <a href="https://github.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-3xl transition-colors" aria-label="GitHub">
+                <a href="https://github.com/thkimura" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-3xl transition-colors" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com/in/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 text-3xl transition-colors" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/thalles-kimura-4a2652218" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-400 text-3xl transition-colors" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
-                <a href="https://facebook.com/SEU_USUARIO" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-500 text-3xl transition-colors" aria-label="Facebook">
+                <a href="https://facebook.com/thalleskimura" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-500 text-3xl transition-colors" aria-label="Facebook">
                   <FaFacebook />
                 </a>
               </div>
